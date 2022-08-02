@@ -1,0 +1,30 @@
+.toggle {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #00AEEF;
+    border-radius: 1rem;
+    position: relative;
+    cursor: pointer;
+    width: 3.5rem;
+    height: 1.5rem;
+}
+
+.toggle>span:nth-child(1) {
+    color: #00AEEF;
+    margin: 2px 0px 2px 3px;
+}
+
+.toggle>span:nth-child(2) {
+    color: #00AEEF;
+    margin: 3px 4px 0px 0px;
+}
+
+.t-button {
+    border-radius: 100%;
+    background: #00AEEF;
+    position: absolute;
+    width: 18.8px;
+    height: 18.8px;
+    color: #00AEEF;
+    margin: 3px;
+}

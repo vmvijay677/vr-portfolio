@@ -1,0 +1,124 @@
+.contact-form {
+    padding: 0 3rem 0 3rem;
+    height: 75vh;
+    margin-top: 4rem;
+    padding-top: 3rem;
+}
+
+.c-heading {
+    text-align: center;
+}
+
+.c-heading> :nth-child(1) {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.c-heading> :nth-child(2) {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00AEEF;
+}
+
+.c-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 1.5rem;
+}
+
+.c-mini-container {
+    width: 10.2rem;
+    height: 8.3rem;
+    border: 2px solid #00AEEF;
+    box-shadow: 1px 1px 10px #00AEEF;
+    transition: 0.3s;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.c-mini-container:hover {
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+
+.c-icon {
+    font-size: 3.5rem;
+    margin: 0px;
+    text-align: center;
+}
+
+.c-mini-heading {
+    margin: 0px;
+    color: #00AEEF;
+    text-align: center;
+    font-size: 17px;
+}
+
+.c-content {
+    margin: 0px;
+    margin-top: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.c-form>form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.c-form .user {
+    width: 20rem;
+    height: 2rem;
+    padding: 4px 10px;
+    outline: none;
+    border: 2px solid #00AEEF;
+    border-radius: 10px;
+}
+
+textarea {
+    height: 4rem !important;
+}
+
+.c-info {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 480px) {
+    .contact-form {
+        height: 150vh;
+        margin-bottom: 6rem;
+        margin-top: 28rem;
+    }
+
+    .c-flex {
+        flex-direction: column;
+        position: relative;
+        left: 15%;
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    .c-info {
+        flex-direction: column;
+        left: -10%;
+    }
+
+    .c-form .user {
+        position: relative;
+        left: -13.5%;
+    }
+
+    .send-button {
+        position: relative;
+        left: -13.5%;
+        margin-bottom: 4rem;
+    }
+}

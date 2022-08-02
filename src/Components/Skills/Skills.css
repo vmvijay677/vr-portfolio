@@ -1,0 +1,68 @@
+.skills {
+    padding: 0 3rem 0 3rem;
+    height: 30rem;
+    margin-bottom: 8rem;
+    margin-top: 4rem;
+    padding-top: 2rem;
+}
+
+.s-container1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.s-container1>img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.s-page {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 8%;
+    gap: 7rem;
+    margin-top: 3rem;
+}
+
+.s-bar {
+    height: 6px;
+    width: 350px;
+    position: relative;
+    background: lightgray;
+    border-radius: 50px;
+    z-index: 999;
+}
+
+.s-bar-percent {
+    background: #00AEEF;
+    height: 6px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+}
+
+.s-heading {
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .s-page {
+        flex-direction: column;
+        width: auto;
+        gap: 0;
+        left: -2%;
+    }
+
+    .s-bar {
+        width: 300px;
+    }
+
+    .skills {
+        margin-bottom: 30rem;
+    }
+}

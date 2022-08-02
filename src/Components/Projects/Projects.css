@@ -1,0 +1,68 @@
+.portfolio {
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 30rem;
+    margin-bottom: 5rem;
+    margin-top: 9rem;
+    padding-top: 4rem;
+}
+
+.p-single {
+    transition: 0.3s;
+}
+
+.p-box-inside {
+    display: flex;
+    gap: 30px;
+}
+
+.p-single>a>img {
+    width: 21rem;
+    height: 11rem;
+    filter: drop-shadow(0px 0px 5px #00AEEf);
+    border-radius: 15px;
+}
+
+.p-single>p {
+    margin: 0;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.cards {
+    position: relative;
+}
+
+.p-box {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    left: 200px;
+}
+
+.p-single:hover {
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .portfolio {
+        flex-direction: column;
+        margin-top: 16rem;
+    }
+
+    .p-box {
+        left: -18%;
+    }
+
+    .p-box-inside {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .p-single {
+        margin-bottom: 2rem;
+    }
+}
