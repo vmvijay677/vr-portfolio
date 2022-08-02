@@ -28,7 +28,12 @@ const Intro = () => {
             </span>
           </div>
 
-          <button className="button i-button">View CV</button>
+          <a
+            href="https://drive.google.com/file/d/1PGmK-lsck5Ml4iowhG_PHExh_OVIwF0G/view"
+            target="blank"
+          >
+            <button className="button i-button">Resume</button>
+          </a>
 
           <div className="i-icons">
             <a href="https://github.com/vmvijay677" target="blank">
@@ -48,7 +53,7 @@ const Intro = () => {
       <Slide right>
         <div className="i-right">
           <img
-            src="https://drive.google.com/uc?export=view&id=113IRZIvJx5KWoSPBcIHrfBev9M2YdkV0"
+            src="https://drive.google.com/uc?export=view&id=1Oz9VkM9HRjkLBPtZ-MtMNolWAA5PaxVX"
             alt="vignesh"
           />
         </div>
@@ -58,3 +63,7 @@ const Intro = () => {
 };
 
 export default Intro;
+
+//https://drive.google.com/uc?export=view&id=1Oz9VkM9HRjkLBPtZ-MtMNolWAA5PaxVX
+
+//https://drive.google.com/file/d/1Oz9VkM9HRjkLBPtZ-MtMNolWAA5PaxVX/view?usp=drivesdk

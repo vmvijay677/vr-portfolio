@@ -1,6 +1,6 @@
 .Intro {
     height: 77vh;
-    margin-top: 6rem;
+    margin-top: 5rem;
     display: flex;
 }
 
@@ -57,15 +57,15 @@
     cursor: pointer;
 }
 
-.i-right>* {
+.i-right>img {
     position: absolute;
     z-index: 1;
-    width: 350px;
-    height: 350px;
+    width: 380px;
+    height: 390px;
     border: 2px solid #00AEEF;
     padding: 10px;
-    border-radius: 50%;
     margin-left: 8rem;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 480px) {

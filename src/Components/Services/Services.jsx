@@ -1,6 +1,6 @@
 import React from "react";
 import "./Services.css";
-import Resume from "./VRCVFinal.pdf";
+import Resume from "./VRCVRESUME.pdf";
 import { useContext } from "react";
 import { themeContext } from "../../Context";
 import Slide from "react-reveal/Slide";
