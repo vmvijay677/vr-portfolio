@@ -28,9 +28,20 @@ function App() {
 
       <Intro />
       <Skills />
-      <Services />
-      <Experience />
-      <Projects />
+
+      <div className='ser-exp'>
+        <Slide left>
+          <Services />
+        </Slide>
+
+        <Slide right>
+          <Experience />
+        </Slide>
+      </div>
+
+      <Slide bottom>
+        <Projects />
+      </Slide>
       <Contact />
       <Footer />
     </div>

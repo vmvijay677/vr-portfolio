@@ -5,6 +5,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import Slide from "react-reveal/Slide";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 const Contact = () => {
   const form = useRef();
@@ -31,6 +32,13 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -107,6 +115,10 @@ const Contact = () => {
           </div>
         </Slide>
       </div>
+
+      <button id="top-button" onClick={scrollToTop}>
+        <ArrowUpwardIcon /> Top
+      </button>
     </div>
   );
 };

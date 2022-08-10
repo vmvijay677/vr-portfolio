@@ -16,16 +16,28 @@
 }
 
 .button:hover {
-  background: white;
+  background: transparent;
   cursor: pointer;
   border: 2px solid #00AEEF;
   color: #00AEEF;
   padding: 6px 18px 6px 18px;
 }
 
+.ser-exp {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+
 @media screen and (max-width: 480px) {
   .App {
     padding: 0.5rem 1rem;
+  }
+
+  .ser-exp {
+    display: flex;
+    flex-direction: column;
   }
 }
 

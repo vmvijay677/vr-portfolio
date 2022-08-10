@@ -6,7 +6,8 @@ import Netflix from "./Netflix.jpg";
 import Facebook from "./Facebook.jpg";
 import { useContext } from "react";
 import { themeContext } from "../../Context";
-import Slide from "react-reveal/Slide";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import VisibilityIcon from "@mui/icons-material/Visibility";
 
 const Projects = () => {
   const theme = useContext(themeContext);
@@ -15,63 +16,180 @@ const Projects = () => {
 
   return (
     <div className="portfolio" id="Projects">
-      <Slide left>
-        <div className="awesome">
-          <span style={{ color: darkMode ? "white" : "black" }}>My Recent</span>
-          <span>Projects</span>
-        </div>
-      </Slide>
+      <div className="awesome">
+        <span style={{ color: darkMode ? "white" : "black" }}>My Recent</span>
+        <span> Projects</span>
+      </div>
 
-      <Slide right>
-        <div className="cards">
-          <div className="p-box">
-            <div className="p-box-inside">
-              <div className="p-single">
+      <div className="cards">
+        <div className="p-box">
+          <div className="p-box-inside">
+            <div className="p-single">
+              <a href="https://mychatapp-by-vignesh.vercel.app/" target="blank">
+                <img src={Chatapp} alt="projects"></img>
+              </a>
+              <p>MyChatApp</p>
+
+              <div className="p-button-container">
+                <a
+                  href="https://github.com/vmvijay677/chatapp-frontend"
+                  target="blank"
+                >
+                  <button className="button p-button">
+                    <GitHubIcon /> Frontend
+                  </button>
+                </a>
+
+                <a
+                  href="https://github.com/vmvijay677/chatapp-backend"
+                  target="blank"
+                >
+                  <button className="button p-button">
+                    <GitHubIcon />
+                    Backend
+                  </button>
+                </a>
+
                 <a
                   href="https://mychatapp-by-vignesh.vercel.app/"
                   target="blank"
                 >
-                  <img src={Chatapp} alt="projects"></img>
+                  <button className="button p-button">
+                    <VisibilityIcon />
+                    Live
+                  </button>
                 </a>
-                <p>MyChatApp</p>
               </div>
+            </div>
 
-              <div className="p-single">
+            <div className="p-single">
+              <a
+                href="https://flipkartclonebyvignesh.vercel.app/"
+                target="blank"
+              >
+                <img src={Flipkart} alt="projects"></img>
+              </a>
+              <p>Flipkart Clone</p>
+
+              <div className="p-button-container">
+                <a
+                  href="https://github.com/vmvijay677/flipkart-frontend"
+                  target="blank"
+                >
+                  <button className="button p-button">
+                    <GitHubIcon /> Frontend
+                  </button>
+                </a>
+
+                <a
+                  href="https://github.com/vmvijay677/flipkart-backend"
+                  target="blank"
+                >
+                  <button className="button p-button">
+                    <GitHubIcon />
+                    Backend
+                  </button>
+                </a>
+
                 <a
                   href="https://flipkartclonebyvignesh.vercel.app/"
                   target="blank"
                 >
-                  <img src={Flipkart} alt="projects"></img>
+                  <button className="button p-button">
+                    <VisibilityIcon />
+                    Live
+                  </button>
                 </a>
-                <p>Flipkart Clone</p>
               </div>
             </div>
-            <br />
+          </div>
+          <br />
 
-            <div style={{ display: "flex", gap: "30px" }}>
-              <div className="p-single">
+          <div className="p-box-inside">
+            <div className="p-single">
+              <a
+                href="https://netflixclonebyvignesh.vercel.app/"
+                target="blank"
+              >
+                <img src={Netflix} alt="projects"></img>
+              </a>
+              <p>Netflix Clone</p>
+
+              <div className="p-button-container">
+                <a
+                  href="https://github.com/vmvijay677/netflix-frontend"
+                  target="blank"
+                >
+                  <button className="button p-button">
+                    <GitHubIcon /> Frontend
+                  </button>
+                </a>
+
+                <a
+                  href="https://github.com/vmvijay677/netflix-backend"
+                  target="blank"
+                >
+                  <button className="button p-button">
+                    <GitHubIcon />
+                    Backend
+                  </button>
+                </a>
+
                 <a
                   href="https://netflixclonebyvignesh.vercel.app/"
                   target="blank"
                 >
-                  <img src={Netflix} alt="projects"></img>
+                  <button className="button p-button">
+                    <VisibilityIcon />
+                    Live
+                  </button>
                 </a>
-                <p>Netflix Clone</p>
               </div>
+            </div>
 
-              <div className="p-single">
+            <div className="p-single">
+              <a
+                href="https://facebookthenextgen.vercel.app/auth"
+                target="blank"
+              >
+                <img src={Facebook} alt="projects"></img>
+              </a>
+              <p>Facebook - The Next Gen</p>
+
+              <div className="p-button-container">
+                <a
+                  href="https://github.com/vmvijay677/facebook-frontend"
+                  target="blank"
+                >
+                  <button className="button p-button">
+                    <GitHubIcon /> Frontend
+                  </button>
+                </a>
+
+                <a
+                  href="https://github.com/vmvijay677/facebook-backend"
+                  target="blank"
+                >
+                  <button className="button p-button">
+                    <GitHubIcon />
+                    Backend
+                  </button>
+                </a>
+
                 <a
                   href="https://facebookthenextgen.vercel.app/auth"
                   target="blank"
                 >
-                  <img src={Facebook} alt="projects"></img>
+                  <button className="button p-button">
+                    <VisibilityIcon />
+                    Live
+                  </button>
                 </a>
-                <p>Facebook - The Next Gen</p>
               </div>
             </div>
           </div>
         </div>
-      </Slide>
+      </div>
     </div>
   );
 };

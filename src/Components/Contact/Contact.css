@@ -1,6 +1,6 @@
 .contact-form {
     padding: 0 3rem 0 3rem;
-    height: 75vh;
+    height: 77vh;
     margin-top: 4rem;
     padding-top: 3rem;
 }
@@ -91,6 +91,29 @@ textarea {
     justify-content: space-evenly;
 }
 
+#top-button {
+    background-color: #00AEEF;
+    border: none;
+    color: white;
+    padding: 3px 10px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: -6%;
+    margin-top: 3.1rem;
+    border-radius: 15px;
+}
+
+#top-button:hover {
+    border: 2px solid #00AEEF;
+    padding: 1px 8px;
+    color: #00AEEF;
+    background-color: transparent;
+}
+
 @media screen and (max-width: 480px) {
     .contact-form {
         height: 150vh;
@@ -120,5 +143,9 @@ textarea {
         position: relative;
         left: -13.5%;
         margin-bottom: 4rem;
+    }
+
+    #top-button {
+        display: none;
     }
 }

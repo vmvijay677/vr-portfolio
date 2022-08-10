@@ -79,4 +79,10 @@
         transform: scale(0.2);
         left: -9rem;
     }
+
+    .i-right>img {
+        width: 340px;
+        height: 370px;
+        left: 6px;
+    }
 }

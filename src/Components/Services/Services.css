@@ -1,16 +1,15 @@
 .services {
     padding: 0 3rem 0 3rem;
     display: flex;
+    flex-direction: column;
     height: 25rem;
-    margin-bottom: 6rem;
-    margin-top: 9rem;
+    margin-bottom: 3rem;
     padding-top: 5rem;
 }
 
 .awesome {
-    display: flex;
-    flex-direction: column;
     position: relative;
+    text-align: center;
 }
 
 .awesome> :nth-child(1) {
@@ -28,7 +27,11 @@
 .s-button {
     width: 10rem;
     height: 2.3rem;
-    margin-top: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.2rem;
+    margin-bottom: 1.1rem;
 }
 
 .cards {
@@ -37,15 +40,16 @@
 
 .c-box {
     width: 16rem;
-    height: 18rem;
+    height: 21rem;
     border: 2px solid #00AEEF;
     border-radius: 20px;
     box-shadow: 1px 1px 10px #00AEEF;
     transition: 0.3s;
-    position: absolute;
-    top: 5%;
+    position: relative;
+    top: 4%;
     right: 0;
-    left: 300px;
+    left: 80px;
+    margin-top: 20px;
 }
 
 .c-box:hover {
@@ -54,8 +58,8 @@
 }
 
 .c-box>img {
-    width: 9rem;
-    height: 9rem;
+    width: 8.5rem;
+    height: 8.5rem;
     object-fit: cover;
     display: block;
     margin-left: auto;

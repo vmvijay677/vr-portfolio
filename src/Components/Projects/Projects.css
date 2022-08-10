@@ -1,24 +1,27 @@
 .portfolio {
     padding: 0 3rem 0 3rem;
     display: flex;
-    height: 30rem;
-    margin-bottom: 5rem;
-    margin-top: 9rem;
+    flex-direction: column;
+    height: 52rem;
+    margin-top: 5rem;
     padding-top: 4rem;
+    margin-bottom: 8rem;
 }
 
 .p-single {
     transition: 0.3s;
+    margin-top: 3rem;
 }
 
 .p-box-inside {
     display: flex;
-    gap: 30px;
+    gap: 3rem;
+    margin-bottom: 2rem;
 }
 
 .p-single>a>img {
-    width: 21rem;
-    height: 11rem;
+    width: 25rem;
+    height: 14rem;
     filter: drop-shadow(0px 0px 5px #00AEEf);
     border-radius: 15px;
 }
@@ -26,9 +29,9 @@
 .p-single>p {
     margin: 0;
     text-align: center;
-    margin-top: 8px;
-    margin-bottom: 5px;
-    font-size: 17px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .cards {
@@ -47,10 +50,30 @@
     cursor: pointer;
 }
 
+.p-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 1rem;
+}
+
+.p-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    padding: 4px 16px 4px 16px;
+}
+
+.p-button:hover {
+    padding: 2px 14px 2px 14px;
+}
+
 @media screen and (max-width: 480px) {
     .portfolio {
         flex-direction: column;
         margin-top: 16rem;
+        margin-bottom: 65rem;
     }
 
     .p-box {
@@ -64,5 +87,23 @@
 
     .p-single {
         margin-bottom: 2rem;
+    }
+
+    .p-single>p {
+        font-size: 18px;
+    }
+
+    .p-single>a>img {
+        width: 22rem;
+        height: 12rem;
+        position: relative;
+        left: -2.5%;
+    }
+
+    .p-button {
+        position: relative;
+        left: 22px;
+        padding: 4px 16px 4px 16px;
+        font-size: 14px;
     }
 }

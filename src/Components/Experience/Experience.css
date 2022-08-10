@@ -1,11 +1,17 @@
 .experience {
     display: flex;
+    flex-direction: column;
     padding: 0 3rem 0 3rem;
-    gap: 5rem;
-    height: 22rem;
+    gap: 4rem;
+    height: 25rem;
     margin-bottom: 3rem;
     color: black;
-    padding-top: 6rem;
+    padding-top: 5rem;
+}
+
+.awesome {
+    position: relative;
+    text-align: center;
 }
 
 .awesome> :nth-child(1) {
@@ -26,14 +32,13 @@
 
 .e-box {
     width: 29rem;
+    height: 21rem;
     border: 2px solid #00AEEF;
     border-radius: 20px;
     box-shadow: 1px 1px 10px #00AEEF;
     transition: 0.3s;
-    position: absolute;
-    top: 5%;
-    right: 0;
-    left: 200px;
+    position: relative;
+    top: -8%;
 }
 
 .e-box:hover {
@@ -42,8 +47,8 @@
 }
 
 .e-box>img {
-    width: 9rem;
-    height: 9rem;
+    width: 8.5rem;
+    height: 8.5rem;
     object-fit: cover;
     display: block;
     margin-left: auto;
@@ -88,7 +93,8 @@
 
     .e-box {
         width: 21.5rem;
-        left: -20%;
+        height: 21.5rem;
+        margin-top: 2rem;
     }
 
     .e-box>p:nth-child(2) {
